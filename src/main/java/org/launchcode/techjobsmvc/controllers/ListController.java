@@ -1,3 +1,4 @@
+
 package org.launchcode.techjobsmvc.controllers;
 
 import org.launchcode.techjobsmvc.models.Job;
@@ -32,6 +33,7 @@ public class ListController {
         tableChoices.put("location", JobData.getAllLocations());
         tableChoices.put("positionType", JobData.getAllPositionTypes());
         tableChoices.put("coreCompetency", JobData.getAllCoreCompetency());
+        tableChoices.put("all", "View all");
     }
 
     @GetMapping(value = "")
@@ -61,4 +63,3 @@ public class ListController {
         return "list-jobs";
     }
 }
-
